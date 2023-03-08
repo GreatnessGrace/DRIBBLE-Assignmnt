@@ -1,0 +1,1514 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://cdn.freebiesupply.com/logos/large/2x/dribbble-icon-1-logo-png-transparent.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+  </head>
+  <body>
+    <header>
+        <div>
+          <button  onclick="topFunction()" id="myBtn" title="Go to top"><img src="assest/download (1).png" /></button>
+          <nav class="navbar smallNavbar">
+          <div class="container-fluid">
+              <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#collapse" aria-controls="collapse" aria-expanded="false">
+                  <i class="fa fa-navicon" id="burger-menu"></i>
+              </button>
+               <div class="collapse navbar-collapse" id="collapse" style="position: relative;" >
+                  <ul class="navbar-nav d-flex justify-content-start">
+                      <li class="nav-item dropdown">
+                          <div class="input-group mt-3">
+                              <span class="input-group-text" id="group">
+                                  <i class="bi bi-search"></i>
+                              </span>
+                              <input class="form-control" type="text" aria-label="Search" placeholder="Search" aria-describedby="group">
+                          </div>
+                      </li>
+                      
+                      <li class="nav-item  dropdown">
+                         <a class="nav-link dropdown-toggle ms-0 text-muted font-weight-bold" id="toggled" data-bs-target="toggled" data-bs-toggle="dropdown" aria-controls="toggled" aria-expanded="false" role="button">
+                          Inspiration
+                         </a>
+                         <ul class="dropdown-menu" aria-labelledby="toggled">
+                          <li class="dropdown-item">
+                              Explore Design Work
+                          </li>
+                          <li class="dropdown-item">
+                              New & Note-worthy
+                          </li>
+                          <li class="dropdown-item">
+                              PLayoffs
+                          </li>
+                          <li class="dropdown-item">
+                              Blog
+                          </li>
+                         </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle ms-0" id="toggled" data-bs-target="toggled" data-bs-toggle="dropdown" aria-controls="toggled" aria-expanded="false" role="button">
+                           Find Work
+                          </a>
+                          <ul class="dropdown-menu" aria-labelledby="toggled">
+                           <li class="dropdown-item">
+                               Job Board
+                           </li>
+                           <li class="dropdown-item">
+                               Freelance Project
+                           </li>
+                           <li class="dropdown-item">
+                               Want freelance design projects?
+                           </li>
+                           <li class="dropdown-item">
+                               Personalize your profile with video
+                           </li>
+                          </ul>
+                       </li>
+                       <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle ms-0" id="toggled" data-bs-target="toggled" data-bs-toggle="dropdown" aria-controls="toggled" aria-expanded="false" role="button">
+                           Learn Design
+                          </a>
+                          <ul class="dropdown-menu" aria-labelledby="toggled">
+                           <li class="dropdown-item">
+                               Certified Product Design Course
+                           </li>
+                           <li class="dropdown-item">
+                              Introduction to UI Design
+                           </li>
+                           <li class="dropdown-item">
+                              Design Systems Course
+                           </li>
+                           <li class="dropdown-item">
+                              Design Career Prep Course
+                           </li>
+                           <li class="dropdown-item">
+                              Browse our courses and workshops
+                           </li>
+                          </ul>
+                       </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle ms-0" id="toggled" data-bs-target="toggled" data-bs-toggle="dropdown" aria-controls="toggled" aria-expanded="false" role="button">
+                           Go Pro
+                          </a>
+                          <ul class="dropdown-menu" aria-labelledby="toggled">
+                           <li class="dropdown-item">
+                              For Designers
+                           </li>
+                           <li class="dropdown-item">
+                              For freelancers
+                           </li>
+                           <li class="dropdown-item">
+                              For teams
+                           </li>
+                          </ul>
+                       </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle ms-0" id="toggled" data-bs-target="toggled" data-bs-toggle="dropdown" aria-controls="toggled" aria-expanded="false" role="button">
+                           Hire Designers
+                          </a>
+                          <ul class="dropdown-menu" aria-labelledby="toggled">
+                           <li class="dropdown-item">
+                               About Dribble Hiring
+                           </li>
+                           <li class="dropdown-item">
+                               Designer Search
+                           </li>
+                           <li class="dropdown-item">
+                              List my job opening
+                           </li>
+                           <li class="dropdown-item">
+                              Post a freelance project
+                           </li>
+                          </ul>
+                       </li>
+                  </ul>
+               </div>
+               <a class="navbar-brand"><img src="assest\download (1).png" width="60px" height="40px"></a>
+                <a class="btn mt-0 navbar-brand" href="#">Sign in</a>
+          </div>
+          </nav>
+          <nav class="navbar navbar-expand-md navbar-light largeNavbar">
+              <div class="container-fluid d-flex align-items-baseline">
+                  <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#collapse" aria-controls="#collapse" aria-expand="false" aria-label="Toggling state">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <ul class="navbar-nav">
+                      <li class="nav-item">
+                          <a class="nav-link" href="#"><img src="assest\download (1).png" width="64px" height="25px"></a>
+                      </li>
+                  </ul>
+                  <div class="collapse navbar-collapse" id="collapse" style="position: relative;">
+                  <ul class="navbar-nav">
+                      <li class="nav-item first p-2">
+                          <a class="nav-link  text-muted pt-2"><b>Inspiration</b></a>
+                      </li>
+                      <div class="container hoverableFirst" id="showME">
+                              <div class="row">
+                                <div class="col-8 w-50 pt-2 bg-white rounded-0">
+                                  <a class="d-flex align-items-start link-dark justify-content-between text-decoration-none">
+                                    <div class="d-flex">
+                                    <img src="assest/purpleSquare.png" height="30px" width="30px" class="mt-2 mx-2 rounded-3">
+                                    <div>
+                                    <b>Explore Design Work</b>
+                                    <p class="text-muted">Trending Design to inspire you</p>
+                                    </div>
+                                    </div>
+                                  
+
+                                    <i class="fa-solid fa-arrow-right linkss"></i>
+                                  </a>
+                                  <a class="d-flex align-items-start link-dark justify-content-between text-decoration-none">
+                                    <div class="d-flex">
+                                    <img src="assest/redSquare.png" height="30px" width="30px" class="mt-2 mx-2 rounded-3">
+                                    <div>
+                                    <b>New and note-worthy</b>
+                                    <p class="text-muted">Up-coming-designers</p>
+                                    </div>
+                                    </div>
+                  
+
+                                    <i class="fa-solid fa-arrow-right linkss"></i>
+                                  </a>
+                                  <a class="d-flex align-items-start link-dark justify-content-between text-decoration-none">
+                                    <div class="d-flex">
+                                    <img src="assest/greenSquare.png" height="30px" width="30px" class="mt-2 mx-2 rounded-3">
+                                    <div>
+                                    <b>Playoffs</b>
+                                    <p class="text-muted">Work designers are riffting on</p>
+                                    </div>
+                                    </div>
+                                    <i class="fa-solid fa-arrow-right linkss"></i>
+                                  </a>
+                                  <a class="d-flex align-items-start link-dark justify-content-between text-decoration-none">
+                                    <div class="d-flex">
+                                    <img src="assest/yellowSquare.png" height="40px" width="40px" class="mt-2 mx-2 rounded-3">
+                                    <div>
+                                    <b>Blog</b>
+                                    <p class="text-muted">Interview tutorials and more</p>
+                                    </div>
+                                    </div>
+                                    <i class="fa-solid fa-arrow-right linkss"></i>
+                                  </a>
+                                  <a class="d-flex align-items-start link-dark justify-content-between text-decoration-none">
+                                    <div class="d-flex">
+                                    <img src="assest/purpleSquare.png" height="40px" width="40px" class="mt-2 mx-2 rounded-3">
+                                    <div>
+                                    <b>Weekly Warm-up</b>
+                                    <p class="text-muted">Prompt to flex your design skills</p>
+                                    </div>
+                                    </div>
+                                    <i class="fa-solid fa-arrow-right linkss"></i>
+                                  </a>
+                                  </div>
+                                <div class="col-4 bg-light pt-2 p-4 rounded-0">
+                                     <div class="bg-light">
+                                      <ul class="list-unstyled">
+                                      <strong><li class="mb-3"><p>Browse Categories</p></li></strong>
+                                      <li class="mb-3"><a class="link-secondary text-decoration-none">Animation</a></li>
+                                      <li class="mb-3"><a class="link-secondary text-decoration-none">Branding</a></li>
+                                      <li class="mb-3"><a class="link-secondary text-decoration-none">Illustration</a></li>
+                                      <li class="mb-3"><a class="link-secondary text-decoration-none">Mobille</a></li>
+                                      <li class="mb-3"><a class="link-secondary text-decoration-none">Print</a></li>
+                                      <li class="mb-3"><a class="link-secondary text-decoration-none">Product Design</a></li>
+                                      <li class="mb-3"><a class="link-secondary text-decoration-none">Typography</a></li>
+                                      <li class="mb-3"><a class="link-secondary text-decoration-none">Web Design</a></li>
+                                      </ul>
+                                     </div>
+                                </div>
+                              </div>
+                      </div>
+                      <li class="nav-item second p-2">
+                          <a class="nav-link text-muted" id="two" href="#"><b>FindWork</b></a>
+                      </li>
+                      <div class="container hoverableSecond flex-column bg-light rounded-3 w-50">
+                          <a class="d-flex link-dark align-items-start justify-content-start text-decoration-none">
+                              <div class="d-flex">
+                              <img src="assest/purpleSquare.png" height="30px" width="30px" class="mt-4 ms-3 me-2 rounded-3">
+                              <div class="mt-3">
+                              <b>Job Board</b>
+                              <p class="text-muted">Find your dream design job</p>
+                              </div>
+                              </div>
+                              <i class="fa-solid fa-arrow-right linkss mt-4 ms-2"></i>
+                          </a>
+                          <a class="d-flex link-dark align-items-start justify-content-start text-decoration-none">
+                              <div class="d-flex">
+                              <img src="assest/redSquare.png" height="30px" width="30px" class="mt-4 ms-3 me-2 rounded-3">
+                              <div class="mt-3">
+                              <span><b>Frelance Projects</b></span>
+                              <p class="text-muted">An exclusive Contract Work</p>
+                              </div>
+                              </div>
+                              <i class="fa-solid fa-arrow-right linkss mt-4 ms-2"></i>
+                          </a>
+                          
+                          <a class="d-flex link-dark align-items-start justify-content-start text-decoration-none">
+                            <div class="d-flex">
+                            <img src="assest/greenSquare.png" height="30px" width="30px" class="mt-4 ms-3 me-2 rounded-3">
+                            <div class="mt-3">
+                            <b>Want freelance design projects?</b>
+                            <p class="text-muted">Get new leads in your inbox everyday</p>
+                            </div>
+                            </div>
+                            <i class="fa-solid fa-arrow-right linkss mt-4 ms-2"></i>
+                        </a>
+                        <hr style="opacity:0.1;">
+                          <a class="d-flex link-dark align-items-start justify-content-start text-decoration-none">
+                              <div class="d-flex">
+                              <img src="assest/yellowSquare.png" height="30px" width="30px" class="mt-4 ms-3 me-2 rounded-3">
+                              <div class="mt-3">
+                              <b>Personalize your profile</b>
+                              <p class="text-muted">Introduce yourself to joinees</p>
+                              </div>
+                              </div>
+                              <i class="fa-solid fa-arrow-right linkss mt-4 ms-2"></i>
+                          </a>
+                      </div>
+                      <li class="nav-item third p-2">
+                          <a class="nav-link textmuted" id="three" href="#"><b>Learn Design</b></a>
+                      </li>
+                      <div class="container hoverableThird flex-column bg-light rounded-3 w-50">
+                          <a class="d-flex link-dark align-items-start justify-content-between text-decoration-none">
+                              <div class="d-flex">
+                              <img src="assest/purpleSquare.png" height="30px" width="30px" class="mt-4 ms-4 me-4 rounded-3">
+                              <div class="mt-3">
+                              <b>Certified Product Design Course</b>
+                              <!-- <p class="text-muted">Learn Product design 16 weeks</p> -->
+                              </div>
+                              </div>
+                              <i class="fa-solid fa-arrow-right linkss mt-4 ms-2"></i>
+                          </a>
+                          <a class="d-flex link-dark align-items-start justify-content-evenly text-decoration-none">
+                              <div class="d-flex">
+                              <img src="assest/redSquare.png" height="30px" width="30px" class="mt-4 ms-2 me-4 rounded-3">
+                              <div class="mt-3">
+                              <b>Intoduction to UI Design Course</b>
+                              <p class="text-muted">Learn UI Design basics</p>
+                              </div>
+                              </div>
+                              <i class="fa-solid fa-arrow-right linkss mt-4 ms-2"></i>
+                          </a>
+                          <a class="d-flex link-dark align-items-start justify-content-evenly text-decoration-none">
+                            <div class="d-flex">
+                            <img src="assest/greenSquare.png" height="30px" width="30px" class="mt-4 ms-2 me-4 rounded-3">
+                            <div class="mt-3">
+                            <b>Design System courses</b>
+                            <p class="text-muted">Scale System Design in 8 weeks...</p>
+                            </div>
+                            </div>
+                            <i class="fa-solid fa-arrow-right linkss mt-4 ms-2"></i>
+                        </a>
+                          <a class="d-flex link-dark align-items-start justify-content-evenly text-decoration-none">
+                              <div class="d-flex">
+                              <img src="assest/yellowSquare.png" height="30px" width="30px" class="mt-4 ms-2 me-4 rounded-3">
+                              <div class="mt-3">
+                              <b>Design Prep Course</b>
+                              <p class="text-muted">Land your Dream Job!</p>
+                              </div>
+                              </div>
+                              <i class="fa-solid fa-arrow-right linkss mt-4 ms-2"></i>
+                          </a>
+                          <a class="d-flex link-dark align-items-start justify-content-evenly text-decoration-none">
+                              <div class="d-flex">
+                              <img src="assest/purpleSquare.png" height="30px" width="30px" class="mt-4 ms-2 me-4 rounded-3">
+                              <div class="mt-3">
+                              <b>Browse courses & workshops</b>
+                              <p class="text-muted">Level up your skills</p>
+                              </div>
+                              </div>
+                              <i class="fa-solid fa-arrow-right linkss mt-4 ms-2"></i>
+                          </a>
+                      </div>
+                      <li class="nav-item fourth p-2">
+                          <a class="nav-link text-muted" id="fourth" href="#"><b>Go Pro</b></a>
+                      </li>
+                      <div class="container hoverableFourth flex-column bg-light rounded-3 w-50">
+                          <a class="d-flex link-dark align-items-center justify-content-between text-decoration-none">
+                              <div class="d-flex">
+                              <img src="assest/purpleSquare.png" height="30px" width="30px" class="mt-3 ms-4 rounded-3">
+                              <div class="ms-3 mt-2">
+                              <b>For Designers</b>
+                              <p class="text-muted">Portfolio creation made easy</p>
+                              </div>
+                              </div>
+                              <i class="fa-solid fa-arrow-right linkss"></i>
+                          </a>
+                          <a class="d-flex link-dark align-items-center justify-content-between text-decoration-none">
+                              <div class="d-flex">
+                              <img src="assest/redSquare.png" height="30px" width="30px" class="mt-3 ms-4 rounded-3">
+                              <div class="ms-3 mt-2">
+                              <b>For freelancers</b>
+                              <p class="text-muted">Fresh leads in your inbox every day</p>
+                              </div>
+                              </div>
+                              <i class="fa-solid fa-arrow-right linkss"></i>
+                          </a>
+                          <a class="d-flex link-dark align-items-center justify-content-between text-decoration-none">
+                              <div class="d-flex">
+                              <img src="assest/greenSquare.png" height="30px" width="30px" class="mt-3 ms-4 rounded-3">
+                              <div class="ms-3 mt-2">
+                              <b>For Teams</b>
+                              <p class="text-muted">build your team's pipeline or profile</p>
+                              </div>
+                              </div>
+                              <i class="fa-solid fa-arrow-right linkss"></i>
+                          </a>
+                      </div>
+                      <li class="nav-item sixth p-2">
+                          <a class="nav-link text-muted" href="#">
+                             <b> Hire Designers</b>
+                          </a>
+                      </li>
+                      <div class="container hoverableSixth flex-column bg-light rounded-3 w-50">
+                          <a class="d-flex link-dark align-items-center justify-content-between text-decoration-none">
+                              <div class="d-flex">
+                              <img src="assest/purpleSquare.png" height="30px" width="30px" class="mt-2 mx-2 rounded-3">
+                              <div>
+                              <b>Designer Search</b>
+                              <p class="text-muted">Find, contact, and hire designers</p>
+                              </div>
+                              </div>
+                              <i class="fa-solid fa-arrow-right linkss"></i>
+                          </a>
+                          <a class="d-flex link-dark align-items-center justify-content-between text-decoration-none">
+                              <div class="d-flex">
+                              <img src="assest/redSquare.png" height="30px" width="30px" class="mt-2 mx-2 rounded-3">
+                              <div>
+                              <b>List my Job opening</b>
+                              <p class="text-muted">The #1 board for job creatives</p>
+                              </div>
+                              </div>
+                              <i class="fa-solid fa-arrow-right linkss"></i>
+                          </a>
+                          <a class="d-flex link-dark align-items-center justify-content-between text-decoration-none">
+                              <div class="d-flex">
+                              <img src="assest/greenSquare.png" height="30px" width="30px" class="mt-2 mx-2 rounded-3">
+                              <div>
+                              <b>Post a freelance project</b>
+                              <p class="text-muted">Board for freelance & contract work</p>
+                              </div>
+                              </div>
+                              <i class="fa-solid fa-arrow-right linkss"></i>
+                          </a>
+                      </div>
+                  </ul>
+               </div>
+               <i class="bi bi-search"></i>
+               <a class="btn mt-0" href="#">Sign in</a>
+               <button class="btn btn-danger mt-0">Sign Up</button>
+          </div>
+      </nav>
+
+
+      
+   
+    <main class="container-fluid  pt-3 pb-5" style="position: relative;">
+      <video muted autoplay loop>
+        <source src="assest\backgroundVideo.mp4" type="video/mp4">
+      </video>
+      <ul>
+      <div class="content">
+          <div id="buttons">
+         <button class="btn btn-light btn-md rounded-pill" title="Discover"> <strong>Discover</strong> </button>
+         <button class="btn btn-dark btn-md rounded-pill" title="Animation">Animation</button>
+         <button class="btn btn-dark btn-md rounded-pill" title="Branding">Branding</button>
+         <button class="btn btn-dark btn-md rounded-pill" title="Illustration">Illustration</button>
+         <button class="btn btn-dark btn-md rounded-pill" title="Mobile">Mobile</button>
+         <button class="btn btn-dark btn-md rounded-pill" title="Print">Print</button>
+         <button class="btn btn-dark btn-md rounded-pill" title="Product Design">Product Design</button>
+         <button class="btn btn-dark btn-md btn-sm-sm rounded-pill" title="Typography">Typography</button>
+         <button class="btn btn-dark btn-md rounded-pill" title="Web Design">Web-Design</button>
+          </div>
+      </div>
+  </ul>
+      <h1 class="mt-4 text-light text-center">
+          Explore the world's leading 
+          <br>
+          design portfolios
+      </h1>
+      <p class="mb-4 mt-3 text-light text-center">
+          Millions of designers and agencies around the world showcase their portfolio work 
+          <br>
+          on Dribbble - the home to the world's best design and creative professionals.
+      </p>
+      <div class="input-group d-flex justify-content-center">
+       <div class="inputlogo">
+        <i class="fa-solid fa-magnifying-glass search_iconBig"></i>
+        <input class="searchBar rounded-5" type="search" placeholder="Search...">
+       </div>
+      </div>
+      <div class="container-fluid second d-flex justify-content-center align-items-baseline">
+         <label class="text-light">Trending Searches</label>
+         <button class="btn btn-sm btn-outline-light rounded-pill mx-2">landing page</button>
+         <button class="btn btn-sm btn-outline-light rounded-pill mx-2">ios</button>
+         <button class="btn btn-sm btn-outline-light rounded-pill mx-2">food</button>
+         <button class="btn btn-sm btn-outline-light rounded-pill mx-2">landing page</button>
+         <button class="btn btn-sm btn-outline-light rounded-pill mx-2">uxdesign</button>
+         <button class="btn btn-sm btn-outline-light rounded-pill mx-2">app design</button>
+      </div>
+  </main>
+  
+
+<nav class="navbar">
+  <div class="container">
+      <div class="dropdown">
+          <button class="btn buttonPopular btn-outline-secondary dropdown-toggle ms-0" id="one" data-bs-toggle="dropdown" aria-controls="one" aria-haspopup="true" aria-expanded="false" style="width: 90px; border: #EA4C9E;">
+              Popular
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="one">
+              <li>
+                  <a class="dropdown-item">
+                  <strong style="color: #EA4C9E;">Popular</strong> 
+                  </a>
+              </li>
+              <li>
+                  <a class="dropdown-item">
+                  New & Noteworthy
+                  </a>
+              </li>
+              <hr class="dropdown-divider">
+              <li>
+                  <a class="dropdown-item">
+                  Market Place
+                  </a>
+              </li>
+              </ul>
+      </div>
+          <button class="btn btn-secondary buttonFilter rounded-3 navbar-toggler" data-bs-target="#collapsedcontent" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapsedcontent" aria-label="toggle navigation" style="border: #EA4C9E;">
+              <i class="bi bi-filter" style="border: #EA4C9E;">Filters</i>
+          </button>
+  </div>
+  </nav>
+  <div class="collapse" id="collapsedcontent">
+    <div class="d-md-flex justify-content-evenly">
+        <div class="ITEM">
+            <label><b>Tags</b></label><br>
+            <div class="input-group">
+                <span class="input-group-text" id="Search"><i class="bi bi-search"></i></span>
+                <input class="form-control" type="search" palceholder="Search" aria-describedby="textlogo" aria-label="Search" size=20>
+            </div>
+        </div>
+        <div class="ITEM">
+            <label><b>Color</b></label><br>
+            <div class="input-group">
+                <span class="input-group-text" id="Search">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none" role="img" class="icon ">
+                        <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="21">
+                        <circle cx="10" cy="10.5" r="10" fill="#C4C4C4"></circle>
+                        </mask>
+                        <g mask="url(#mask0)">
+                        <rect x="10" y="0.5" width="10" height="20" fill="#3A8BBB"></rect>
+                        <path d="M20 4.5L10 -2.5V10.5L20 4.5Z" fill="#00B6E3"></path>
+                        <path d="M20 16.5L10 24.5V10.5L20 16.5Z" fill="#C142A0"></path>
+                        <path d="M0 0.5H10V10.5L0 16.5V0.5Z" fill="#FCC870"></path>
+                        <path d="M-7 0.5H10V10.5L-7 0.5Z" fill="#EF875B"></path>
+                        <path d="M0 16.5L10 24.5V10.5L0 16.5Z" fill="#FF5555"></path>
+                        </g>
+                        <circle cx="10" cy="10.5" r="3" fill="#F5F6F7"></circle>
+                        </svg>
+                </span>
+                <input class="form-control" type="search" name="color" id="color" placeholder="Enter hex or select" autocomplete="off" maxlength="7" pattern="[a-Fa-F\d]+" data-name="Color" data-track-filter="true" size="20">
+            </div>
+        </div>
+        <div class="ITEM">
+            <label for="timeframe"><b>Time Frame</b></label><br>
+            <select class="form-control"  list="timeframes" id="timeframe" style="width: 250px;"> 
+                
+                <option value="Now" selected>Now</option>
+                <option value="This past week">This Past Week</option>
+                <option value="This past month">This Past Month</option>
+                <option value="This past year">This Past Year</option>
+                <option value="All Time">All Time</option>
+            </select>
+        </div>
+        <div clas="ITEM">
+            <label for="downloads"><b>Downloads</b></label><br>
+            <select class="form-control" list="downloaditem" id="downloads" style="width: 250px;">
+                <option value="All Shots">All Shots</option>
+                <option value="Adobe Illustrator">Adobe Illustrator</option>
+                <option value="Adobe Photoshop">Adobe Photoshop</option>
+                <option value="Adobe XD">Adobe XD</option>
+                <option value="Figma">Figma</option>
+                <option value="Invision Studio">Invision Studio</option>
+                <option value="Sketch">Sketch</option>
+            </select>
+        </div>
+    </div>
+ </div>
+ </div>
+
+    <div class="container mt-3">
+      <div class="row g-4 mb-4">
+          <div class="col-lg-3 col-sm-6">
+              <div class="item">
+                  <div class="card">
+                   <img src="/assest/35.webp" class="card-img">
+                   <div class="card-img-overlay">
+                       <div class="card-text d-flex justify-content-between">
+                          <p style="font-size: 20px; color: black"><strong>Adds</strong></p>
+                          <div>
+                          <i class="fas fa-heart ms-1"></i>
+                          <i class="bi bi-cloud-plus-fill"></i>
+                          </div>
+                      </div>
+                   </div>
+                  </div>
+                  <div class="short-details d-flex align-items-start justify-content-between">
+                   <a class="d-flex text-decoration-none align-items-center justify-content-start" href="">
+                   <img class="mt-1 me-1"  src="/assest/1.svg" width="20px" height="20px">
+                   <span class="text-muted text-with-logo"><b>Relinns</b></span>
+                   <button class="btn btn-secondary mt-1 ms-1 smallButton" type="button">Team</button>
+                   </a>
+                   <div class="two d-flex justify-content-around align-items-center">
+                       <i class="fas fa-heart ms-1"></i>
+                       245
+                       <i class="fas fa-eye ms-1"></i>
+                       21.9k
+                   </div>
+                  </div>
+                  </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+              <div class="item">
+                  <div class="card">
+                   <img src="/assest/36.webp" class="card-img">
+                   <div class="card-img-overlay">
+                       <div class="card-text d-flex align-items-baseline justify-content-between">
+                          <p style="font-size: 20px;"><b>Mobile App</b></p>
+                          <i class="fas fa-heart ms-1"></i>
+                          <i class="bi bi-cloud-plus-fill"></i>
+                      </div>
+                   </div>
+                  </div>
+                  <div class="short-details d-flex justify-content-between">
+                   <a class="one d-flex align-items-center text-decoration-none">
+                      <img class="mt-1 me-1"  src="/assest/2.svg" width="20px" height="20px">
+                      <span class="text-muted text-with-logo"><b>Technology</b></span>
+                      <button class="btn btn-secondary mt-1 ms-1 smallButton" type="button">Team</button>
+                   </a>
+                       <div class="two d-flex justify-content-evenly align-items-center">
+                          <i class="fas fa-heart ms-1"></i>
+                       203
+                       <i class="fas fa-eye ms-1"></i>
+                       11.8k
+                       </div>
+                  </div>
+                  </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+              <div class="item">
+                  <div class="card">
+                   <img src="/assest/37.webp" class="card-img">
+                   <div class="card-img-overlay">
+                       <div class="card-text d-flex justify-content-between align-items-baseline">
+                          <p style="font-size: 20px;"><b>Consulting Corporation</b></p>
+                          <i class="fas fa-heart ms-1"></i>
+                          <i class="bi bi-cloud-plus-fill"></i>
+                      </div>
+                   </div>
+                  </div>
+                  <div class="short-details d-flex justify-content-between">
+                      <a class="one d-flex align-items-center text-decoration-none">
+                           <img class="mt-1 me-1"  src="/assest/3.svg" width="20px" height="20px">
+                           <span class="text-muted text-with-logo"><b>Private</b></span>
+                          <button class="btn btn-secondary mt-1 ms-1 smallButton" type="button" style="padding:0px">Team</button>
+                      </a>
+                       <div class="two d-flex align-items-baseline justify-content-around">
+                          <i class="fas fa-heart ms-1"></i>
+                          156
+                          <i class="fas fa-eye ms-1"></i>
+                          2.5k
+                       </div>
+                  </div>
+                  </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+              <div class="item">
+                  <div class="card">
+                   <img src="/assest/38.webp" class="card-img">
+                   <div class="card-img-overlay">
+                       <div class="card-text d-flex justify-content-between align-items-baseline">
+                          <p style="font-size: 20px;"><b>Energy Trading</b></p>
+                          <i class="fas fa-heart ms-1"></i>
+                          <i class="bi bi-cloud-plus-fill"></i>
+                      </div>
+                   </div>
+                  </div>
+                  <div class="short-details d-flex justify-content-between">
+                      <a class="one d-flex align-items-center text-decoration-none">
+                           <img class="mt-1 me-1"  src="/assest/4.png" width="20px" height="20px">
+                           <span class="text-muted text-with-logo"><b>Crazy Brands</b></span>
+                          <button class="btn btn-secondary mt-1 ms-1 smallButton" type="button">Team</button>
+                      </a>
+                       <div class="two d-flex align-items-baseline justify-content-around">
+                          <i class="fas fa-heart ms-1"></i>
+                          154
+                          <i class="fas fa-eye ms-1"></i>
+                          7.2k
+                       </div>
+                  </div>
+                  </div>
+          </div>
+      </div>
+     <div class="row g-4 mb-4">
+      <div class="col-lg-3 col-sm-6">
+          <div class="item">
+              <div class="card">
+               <img src="/assest/39.webp" class="card-img">
+               <div class="card-img-overlay">
+                   <div class="card-text d-flex justify-content-between align-items-baseline">
+                      <p style="font-size: 20px;"><b>5th Retirement Process</b></p>
+                      <i class="fas fa-heart ms-1"></i>
+                      <i class="bi bi-cloud-plus-fill"></i>
+                   </div>
+               </div>
+              </div>
+              <div class="short-details d-flex justify-content-between">
+               <a class="one d-flex align-items-center text-decoration-none">
+                  <img class="mt-1 me-1"  src="/assest/5.webp" width="20px" height="20px">
+                  <span class="text-muted text-with-logo"><b>Limited</b></span>
+                 <button class="btn btn-secondary mt-1 ms-1 smallButton" type="button" >Team</button>
+               </a>
+                   <div class="two d-flex align-items-baseline">
+                      <i class="fas fa-heart ms-1"></i>
+                      247
+                      <i class="fas fa-eye ms-1"></i>
+                      50.9k
+               </div>
+              </div>
+              </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+          <div class="item">
+              <div class="card">
+               <img src="/assest/40.webp" class="card-img">
+               <div class="card-img-overlay">
+                   <div class="card-text d-flex justify-content-between align-items-baseline">
+                      <p style="font-size: 20px;"><b>Ticket Flight</b></p>
+                      <i class="fas fa-heart ms-1"></i>
+                          <i class="bi bi-cloud-plus-fill"></i>
+                  </div>
+               </div>
+              </div>
+              <div class="short-details d-flex justify-content-between">
+                  <a class="one d-flex text-decoration-none align-items-center">
+                      <img class="mt-1 me-1"  src="/assest/6.webp" width="20px" height="20px">
+                      <span class="text-muted text-with-logo"><b>Laboratory
+                      </b></span>
+                     <button class="btn btn-secondary mt-1 ms-1 smallButton" type="button" style="padding:0px">Team</button>
+                  </a>
+                      <div class="two d-flex align-items-baseline">
+                          <i class="fas fa-heart ms-1"></i>
+                       228
+                       <i class="fas fa-eye ms-1"></i>
+                       6.7k
+                  </div>
+              </div>
+              </div>
+      </div> 
+      <div class="col-lg-3 col-sm-6">
+          <div class="item">
+              <div class="card">
+               <img src="/assest/41.webp" class="card-img">
+               <div class="card-img-overlay">
+                   <div class="card-text d-flex justify-content-between align-items-baseline">
+                      <p style="font-size: 20px;"><b>Marketplace... </b></p>
+                      <i class="fas fa-heart ms-1"></i>
+                          <i class="bi bi-cloud-plus-fill"></i>
+                  </div>
+               </div>
+              </div>
+              <div class="short-details d-flex justify-content-between">
+                  <a class="one d-flex text-decoration-none align-items-center">
+                      <img class="mt-1 me-1"  src="/assest/7.png" width="20px" height="20px">
+                      <span class="text-muted text-with-logo"><b>Kamboj Brothers</b></span>
+                     <button class="btn btn-secondary mt-1 ms-1 smallButton" type="button" style="padding:0px">Team</button>
+                  </a>
+                   <div class="two d-flex align-items-baseline">
+                      <i class="fas fa-heart ms-1"></i>
+                       44
+                       <i class="fas fa-eye ms-1"></i>
+                       2.4k
+                   </div>
+              </div>
+              </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+          <div class="item">
+              <div class="card">
+               <img src="/assest/43.webp" class="card-img">
+               <div class="card-img-overlay">
+                   <div class="card-text d-flex justify-content-between align-items-baseline">
+                      <p style="font-size: 20px;"><b>Podcast Platform... </b></p>
+                      <i class="fas fa-heart ms-1"></i>
+                          <i class="bi bi-cloud-plus-fill"></i>
+                  </div>
+               </div>
+              </div>
+              <div class="short-details d-flex justify-content-between">
+                  <a class="one d-flex align-items-center text-decoration-none">
+                       <img class="mt-1 me-1"  src="/assest/8.png" width="20px" height="20px">
+                       <span class="text-muted text-with-logo"><b>UI8</b></span>
+                      <button class="btn btn-secondary mt-1 ms-1 smallButton" type="button" style="padding:0px">PRO</button>
+                  </a>
+                   <div class="two d-flex align-items-baseline justify-content-around">
+                      <i class="fas fa-heart ms-1"></i>
+                      169
+                      <i class="fas fa-eye ms-1"></i>
+                      4.6k
+                   </div>
+              </div>
+              </div>
+      </div>
+     </div>
+     <div class="row g-4 mb-4">
+      <div class="col-lg-3 col-sm-6">
+            <div class="item">
+     <div class="card">
+      <img src="/assest/44.webp" class="card-img">
+      <div class="card-img-overlay">
+          <div class="card-text d-flex justify-content-between align-items-baseline">
+              <p style="font-size: 20px;"><b>Artworld Attention!! </b></p>
+              <i class="fas fa-heart ms-1"></i>
+                          <i class="bi bi-cloud-plus-fill"></i>
+          </div>
+      </div>
+     </div>
+     <div class="short-details d-flex justify-content-between">
+      <a class="one d-flex text-decoration-none align-items-center">
+          <img class="mt-1 me-1"  src="/assest/9.png" width="20px" height="20px">
+          <span class="text-muted text-with-logo"><b>TypeScript</b></span>
+         <button class="btn btn-secondary mt-1 ms-1 smallButton" type="button">NEW!</button>
+      </a>
+          <div class="two d-flex align-items-baseline">
+              <i class="fas fa-heart ms-1"></i>
+                       111
+                       <i class="fas fa-eye ms-1"></i>
+                       8.4k
+          </div>
+     </div>
+     </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+          <div class="item">
+              <div class="card">
+               <img src="/assest/45.webp" class="card-img">
+               <div class="card-img-overlay">
+                   <div class="card-text d-flex justify-content-between align-items-baseline">
+                      <p style="font-size: 20px;"><b>Task iOS Mobile</b></p>
+                      <i class="fas fa-heart ms-1"></i>
+                          <i class="bi bi-cloud-plus-fill"></i>
+                  </div>
+               </div>
+              </div>
+              <div class="short-details d-flex justify-content-between">
+                  <a class="one d-flex text-decoration-none align-items-center">
+                      <img class="mt-1 me-1"  src="/assest/10.png" width="20px" height="20px">
+                      <span class="text-muted text-with-logo"><b>IPHONE</b></span>
+                     <button class="btn btn-secondary mt-1 ms-1 smallButton" type="button">Team</button>
+                  </a>
+                   <div class="two d-flex align-items-baseline">
+                      <i class="fas fa-heart ms-1"></i>
+                      139
+                      <i class="fas fa-eye ms-1"></i>
+                      5k
+                   </div>
+              </div>
+              </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+          <div class="item">
+              <div class="card">
+               <img src="/assest/46.webp" class="card-img">
+               <div class="card-img-overlay">
+                   <div class="card-text d-flex justify-content-between align-items-baseline">
+                      <p style="font-size: 20px;"><b>Farmer Welfare Board</b></p>
+                      <i class="fas fa-heart ms-1"></i>
+                          <i class="bi bi-cloud-plus-fill"></i>
+                  </div>
+               </div>
+              </div>
+              <div class="short-details d-flex justify-content-between">
+                  <a class="one d-flex text-decoration-none align-items-center">
+                      <img class="mt-1 me-1"  src="/assest/11.png" width="20px" height="20px">
+                      <span class="text-muted text-with-logo"><b>Steve Jobs</b></span>
+                     <button class="btn btn-secondary mt-1 ms-1 smallButton" type="button">PRO</button>
+                  </a>
+                   <div class="two d-flex align-items-baseline">
+                      <i class="fas fa-heart ms-1"></i>
+                       128
+                       <i class="fas fa-eye ms-1"></i>
+                       2.3k
+                   </div>
+              </div>
+              </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+          <div class="item">
+              <div class="card">
+               <img src="/assest/47.webp" class="card-img">
+               <div class="card-img-overlay">
+                   <div class="card-text d-flex justify-content-between align-items-baseline">
+                      <p style="font-size: 20px;"><b>Awesome Art->1 </b></p>
+                      <i class="fas fa-heart ms-1"></i>
+                          <i class="bi bi-cloud-plus-fill"></i>
+                  </div>
+               </div>
+              </div>
+              <div class="short-details d-flex justify-content-between">
+                  <a class="one d-flex align-items-center text-decoration-none">
+                       <img class="mt-1 me-1"  src="/assest/12.png" width="20px" height="20px">
+                       <span class="text-muted text-with-logo"><b>DRINK</b></span>
+                      <button class="btn btn-secondary mt-1 ms-1 smallButton" type="button">PRO</button>
+                  </a>
+                   <div class="two d-flex align-items-baseline justify-content-around">
+                      <i class="fas fa-heart ms-1"></i>
+                      145
+                      <i class="fas fa-eye ms-1"></i>
+                      8.5k
+                   </div>
+              </div>
+              </div>
+      </div>
+     </div>
+      
+     <div class="row g-4 mb-4">
+      <div class="col-lg-3 col-sm-6">
+          <div class="item">
+              <div class="card">
+               <img src="/assest/48.webp" class="card-img">
+               <div class="card-img-overlay">
+                   <div class="card-text d-flex justify-content-between align-items-baseline">
+                      <p style="font-size: 20px;"><b>Task Manager... </b></p>
+                      <i class="fas fa-heart ms-1"></i>
+                          <i class="bi bi-cloud-plus-fill"></i>
+                  </div>
+               </div>
+              </div>
+              <div class="short-details d-flex justify-content-between">
+                  <a class="one d-flex text-decoration-none align-items-center">
+                      <img class="mt-1 me-1"  src="/assest/13.png" width="20px" height="20px">
+                      <span class="text-muted text-with-logo"><b>Victory</b></span>
+                     <button class="btn btn-secondary mt-1 ms-1 smallButton" type="button">Team</button>
+                  </a>
+                   <div class="two d-flex align-items-baseline">
+                      <i class="fas fa-heart ms-1"></i>
+                       139
+                       <i class="fas fa-eye ms-1"></i>
+                       3.9k
+                   </div>
+              </div>
+              </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+          <div class="item">
+              <div class="card">
+               <img src="/assest/50.webp" class="card-img">
+               <div class="card-img-overlay">
+                   <div class="card-text d-flex justify-content-between align-items-baseline">
+                      <p style="font-size: 20px;"><b>Feel Better </b></p>
+                      <i class="fas fa-heart ms-1"></i>
+                          <i class="bi bi-cloud-plus-fill"></i>
+                  </div>
+               </div>
+              </div>
+              <div class="short-details d-flex justify-content-between">
+                  <a class="one d-flex text-decoration-none align-items-center">
+                      <img class="mt-1 me-1"  src="/assest/14.png" width="20px" height="20px">
+                      <span class="text-muted text-with-logo"><b>Awesome</b></span>
+                     <button class="btn btn-secondary mt-1 ms-1 smallButton" type="button">Team</button>
+                  </a>
+                   <div class="two d-flex align-items-baseline">
+                      <i class="fas fa-heart ms-1"></i>
+                       113
+                       <i class="fas fa-eye ms-1"></i>
+                       1.3k
+                   </div>
+              </div>
+              </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+              
+     <div class="item">
+      <div class="card">
+       <img src="/assest/51.webp" class="card-img">
+       <div class="card-img-overlay">
+           <div class="card-text d-flex justify-content-between align-items-baseline">
+              <p style="font-size: 20px;"><b>Finanacial Services </b></p>
+              <i class="fas fa-heart ms-1"></i>
+              <i class="bi bi-cloud-plus-fill"></i>
+          </div>
+       </div>
+      </div>
+      <div class="short-details d-flex justify-content-between">
+          <a class="one d-flex text-decoration-none align-items-center">
+              <img class="mt-1 me-1"  src="/assest/15.png" width="20px" height="20px">
+              <span class="text-muted text-with-logo"><b>Heartbeat</b></span>
+             <button class="btn btn-secondary mt-1 ms-1 smallButton" type="button">Team</button>
+          </a>
+           <div class="two d-flex align-items-baseline">
+              <i class="fas fa-heart ms-1"></i>
+                       33
+                       <i class="fas fa-eye ms-1"></i>
+                       1.8k
+           </div>
+      </div>
+      </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+          <div class="item">
+              <div class="card">
+               <img src="/assest/52.webp" class="card-img">
+               <div class="card-img-overlay">
+                   <div class="card-text d-flex justify-content-between align-items-baseline">
+                      <p style="font-size: 20px;"><b>Wonder Mountains... </b></p>
+                      <i class="fas fa-heart ms-1"></i>
+                          <i class="bi bi-cloud-plus-fill"></i>
+                  </div>
+               </div>
+              </div>
+              <div class="short-details d-flex justify-content-between">
+                  <a class="one d-flex align-items-center text-decoration-none">
+                       <img class="mt-1 me-1"  src="/assest/16.png" width="20px" height="20px">
+                       <span class="text-muted text-with-logo"><b>Obama</b></span>
+                      <button class="btn btn-secondary mt-1 ms-1 smallButton" type="button">Team</button>
+                  </a>
+                   <div class="two d-flex align-items-baseline justify-content-around">
+                      <i class="fas fa-heart ms-1"></i>
+                      56
+                      <i class="fas fa-eye ms-1"></i>
+                      3k
+                   </div>
+              </div>
+              </div>
+      </div>
+     </div>
+     <div class="row g-4 mb-4">
+      <div class="col-lg-3 col-sm-6">
+
+          <div class="item">
+              <div class="card">
+               <img src="/assest/53.webp" class="card-img">
+               <div class="card-img-overlay">
+                   <div class="card-text d-flex justify-content-between align-items-baseline">
+                     <p style="font-size: 20px;"><b>Trump : yes</b></p>
+                     <i class="fas fa-heart ms-1"></i>
+                     <i class="bi bi-cloud-plus-fill"></i>
+                  </div>
+               </div>
+              </div>
+              <div class="short-details d-flex justify-content-between">
+                  <a class="one d-flex text-decoration-none align-items-center">
+                      <img class="mt-1 me-1"  src="/assest/17.png" width="20px" height="20px">
+                      <span class="text-muted text-with-logo"><b>Expert Design Agency</b></span>
+                     <button class="btn btn-secondary mt-1 ms-1 smallButton" type="button" style="padding:0px">PRO</button>
+                  </a>
+                   <div class="two d-flex align-items-baseline">
+                      <i class="fas fa-heart ms-1"></i>
+                       56
+                       <i class="fas fa-eye ms-1"></i>
+                       985
+                   </div>
+              </div>
+              </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+          
+     <div class="item">
+      <div class="card">
+       <img src="/assest/54.webp" class="card-img">
+       <div class="card-img-overlay">
+           <div class="card-text d-flex justify-content-between align-items-baseline">
+              <p style="font-size: 20px;"><b>Macbook Giveaway.... </b></p>
+              <i class="fas fa-heart ms-1"></i>
+                          <i class="bi bi-cloud-plus-fill"></i>
+          </div>
+       </div>
+      </div>
+      <div class="short-details d-flex justify-content-between">
+          <a class="one d-flex text-decoration-none align-items-center">
+              <img class="mt-1 me-1"  src="/assest/18.png" width="20px" height="20px">
+              <span class="text-muted text-with-logo"><b>Planting Studio</b></span>
+             <button class="btn btn-secondary mt-1 ms-1 smallButton" type="button">Team</button>
+          </a>
+           <div class="two d-flex align-items-baseline">
+              <i class="fas fa-heart ms-1"></i>
+                       92
+                       <i class="fas fa-eye ms-1"></i>
+                       3k
+           </div>
+      </div>
+      </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+          
+     <div class="item">
+      <div class="card">
+       <img src="/assest/55.webp" class="card-img">
+       <div class="card-img-overlay">
+           <div class="card-text d-flex justify-content-between align-items-baseline">
+              <p style="font-size: 20px;"><b>Top to Top Gadget</b></p>
+              <i class="fas fa-heart ms-1"></i>
+                          <i class="bi bi-cloud-plus-fill"></i>
+          </div>
+       </div>
+      </div>
+      <div class="short-details d-flex justify-content-between">
+          <a class="one d-flex text-decoration-none align-items-center">
+              <img class="mt-1 me-1"  src="/assest/19.png" width="20px" height="20px">
+              <span class="text-muted text-with-logo"><b>Cute Kitten</b></span>
+             <button class="btn btn-secondary mt-1 ms-1 smallButton" type="button" >Team</button>
+          </a>
+           <div class="two d-flex align-items-baseline">
+              <i class="fas fa-heart ms-1"></i>
+                       62
+                       <i class="fas fa-eye ms-1"></i>
+                       1.6k
+           </div>
+      </div>
+      </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+          <div class="item">
+              <div class="card">
+               <img src="/assest/56.webp" class="card-img">
+               <div class="card-img-overlay">
+                   <div class="card-text d-flex justify-content-between align-items-baseline">
+                      <p style="font-size: 20px;"><b>Typography inspiration</b></p>
+                      <i class="fas fa-heart ms-1"></i>
+                          <i class="bi bi-cloud-plus-fill"></i>
+                  </div>
+               </div>
+              </div>
+              <div class="short-details d-flex justify-content-between">
+                  <a class="one d-flex align-items-center text-decoration-none">
+                       <img class="mt-1 me-1"  src="/assest/20.png" width="20px" height="20px">
+                       <span class="text-muted text-with-logo"><b>Open Purpose</b></span>
+                      <button class="btn btn-secondary mt-1 ms-1 smallButton" type="button">Team</button>
+                  </a>
+                   <div class="two d-flex align-items-baseline justify-content-around">
+                      <i class="fas fa-heart ms-1"></i>
+                      166
+                      <i class="fas fa-eye ms-1"></i>
+                  9.2k
+                   </div>
+              </div>
+              </div>
+      </div>
+     </div>
+   <div class="row g-4 mb-4">
+      <div class="col-lg-3 col-sm-6">
+          <div class="item">
+              <div class="card">
+               <img src="/assest/57.webp" class="card-img">
+               <div class="card-img-overlay">
+                   <div class="card-text d-flex justify-content-between align-items-baseline">
+                      <p style="font-size: 20px;"><b>Zomato Delivery...</b></p>
+                      <i class="fas fa-heart ms-1"></i>
+                          <i class="bi bi-cloud-plus-fill"></i>
+                  </div>
+               </div>
+              </div>
+              <div class="short-details d-flex justify-content-between">
+                  <a class="one d-flex text-decoration-none align-items-center">
+                      <img class="mt-1 me-1"  src="/assest/21.png" width="20px" height="20px">
+                      <span class="text-muted text-with-logo"><b>One Week Wonders</b></span>
+                     <button class="btn btn-secondary mt-1 ms-1 smallButton" type="button">Team</button>
+                  </a>
+                   <div class="two d-flex align-items-baseline">
+                      <i class="fas fa-heart ms-1"></i>
+                       193
+                       <i class="fas fa-eye ms-1"></i>
+                       6.9k
+                   </div>
+              </div>
+              </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+              
+     <div class="item">
+      <div class="card">
+       <img src="/assest/58.webp" class="card-img">
+       <div class="card-img-overlay">
+           <div class="card-text d-flex justify-content-between align-items-baseline">
+              <p style="font-size: 20px;"><b>Electronic WEB Pages</b></p>
+              <i class="fas fa-heart ms-1"></i>
+                          <i class="bi bi-cloud-plus-fill"></i>
+          </div>
+       </div>
+      </div>
+      <div class="short-details d-flex justify-content-between">
+          <a class="one d-flex text-decoration-none align-items-center">
+              <img class="mt-1 me-1"  src="/assest/22.png" width="20px" height="20px">
+              <span class="text-muted text-with-logo"><b>North Studio</b></span>
+             <button class="btn btn-secondary mt-1 ms-1 smallButton" type="button">Team</button>
+          </a>
+           <div class="two d-flex align-items-baseline">
+              <i class="fas fa-heart ms-1"></i>
+                       25
+                       <i class="fas fa-eye ms-1"></i>
+                       3.4k
+           </div>
+      </div>
+      </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+     <div class="item">
+      <div class="card">
+       <img src="/assest/60.webp" class="card-img">
+       <div class="card-img-overlay">
+           <div class="card-text d-flex justify-content-between align-items-baseline">
+              <p style="font-size: 20px;"><b>Snow show me..</b></p>
+              <i class="fas fa-heart ms-1"></i>
+                          <i class="bi bi-cloud-plus-fill"></i>
+           </div>
+       </div>
+      </div>
+      <div class="short-details d-flex justify-content-between">
+          <a class="one d-flex text-decoration-none align-items-center">
+              <img class="mt-1 me-1"  src="/assest/23.png" width="20px" height="20px">
+              <span class="text-muted text-with-logo"><b>Rahul Rana</b></span>
+             <button class="btn btn-secondary mt-1 ms-1 smallButton" type="button" >Pro</button>
+          </a>
+           <div class="two d-flex align-items-baseline">
+              <i class="fas fa-heart ms-1"></i>
+                       50
+                       <i class="fas fa-eye ms-1"></i>
+                      4.9k
+           </div>
+      </div>
+      </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+          <div class="item">
+              <div class="card">
+               <img src="/assest/62.webp" class="card-img">
+               <div class="card-img-overlay">
+                   <div class="card-text d-flex justify-content-between align-items-baseline">
+                      <p style="font-size: 20px;"><b>Unilever Products</b></p>
+                      <i class="fas fa-heart ms-1"></i>
+                          <i class="bi bi-cloud-plus-fill"></i>
+                  </div>
+               </div>
+              </div>
+              <div class="short-details d-flex justify-content-between">
+                  <a class="one d-flex align-items-center text-decoration-none">
+                       <img class="mt-1 me-1"  src="/assest/24.png" width="20px" height="20px">
+                       <span class="text-muted text-with-logo"><b>Pixel</b></span>
+                      <button class="btn btn-secondary mt-1 ms-1 smallButton" type="button">Team</button>
+                  </a>
+                   <div class="two d-flex align-items-baseline justify-content-around">
+                      <i class="fas fa-heart ms-1"></i>
+                      32
+                      <i class="fas fa-eye ms-1"></i>
+                      2.6k
+                   </div>
+              </div>
+              </div>
+      </div>
+   </div>
+          <div class="row g-4 mb-4">
+              <div class="col-lg-3 col-sm-6">
+                  <div class="item">
+                      <div class="card">
+                       <img src="/assest/63.webp" class="card-img">
+                       <div class="card-img-overlay">
+                           <div class="card-text d-flex justify-content-between align-items-baseline">
+                              <p style="font-size: 20px;"><b>Enterprise Stocks</b></p>
+                              <i class="fas fa-heart ms-1"></i>
+                          <i class="bi bi-cloud-plus-fill"></i>
+                          </div>
+                       </div>
+                      </div>
+                      <div class="short-details d-flex justify-content-between">
+                          <a class="one d-flex text-decoration-none align-items-center">
+                              <img class="mt-1 me-1"  src="/assest/25.png" width="20px" height="20px">
+                              <span class="text-muted text-with-logo"><b>Crompton</b></span>
+                             <button class="btn btn-secondary mt-1 ms-1 smallButton" type="button">Team</button>
+                          </a>
+                           <div class="two d-flex align-items-baseline">
+                              <i class="fas fa-heart ms-1"></i>
+                              47
+                              <i class="fas fa-eye ms-1"></i>
+                              532 
+                           </div>
+                      </div>
+                      </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                  <div class="item">
+                      <div class="card">
+                       <img src="/assest/64.webp" class="card-img">
+                       <div class="card-img-overlay">
+                           <div class="card-text d-flex justify-content-between align-items-baseline">
+                              <p style="font-size: 20px;"><b>World Cup</b></p>
+                              <i class="fas fa-heart ms-1"></i>
+                          <i class="bi bi-cloud-plus-fill"></i>
+                          </div>
+                       </div>
+                      </div>
+                      <div class="short-details d-flex justify-content-between">
+                          <a class="one d-flex text-decoration-none align-items-center">
+                              <img class="mt-1 me-1"  src="/assest/26.png" width="20px" height="20px">
+                              <span class="text-muted text-with-logo"><b>Pick a team</b></span>
+                             <button class="btn btn-secondary mt-1 ms-1 smallButton" type="button">Team</button>
+                          </a>
+                           <div class="two d-flex align-items-baseline">
+                              <i class="fas fa-heart ms-1"></i>
+                      49
+                      <i class="fas fa-eye ms-1"></i>
+                      16.3k
+                           </div>
+                      </div>
+                      </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                  <div class="item">
+                      <div class="card">
+                       <img src="/assest/65.webp" class="card-img">
+                       <div class="card-img-overlay">
+                           <div class="card-text d-flex justify-content-between align-items-baseline">
+                              <p style="font-size: 20px;"><b>CCTV Surveileance</b></p>
+                              <i class="fas fa-heart ms-1"></i>
+                          <i class="bi bi-cloud-plus-fill"></i>
+                          </div>
+                       </div>
+                      </div>
+                      <div class="short-details d-flex justify-content-between">
+                          <a class="one d-flex text-decoration-none align-items-center">
+                              <img class="mt-1 me-1"  src="/assest/27.png" width="20px" height="20px">
+                              <span class="text-muted text-with-logo"><b>Nike Brands</b></span>
+                             <button class="btn btn-secondary mt-1 ms-1 smallButton" type="button">NEW!</button>
+                          </a>
+                           <div class="two d-flex align-items-baseline">
+                              <i class="fas fa-heart ms-1"></i>
+                      28
+                      <i class="fas fa-eye ms-1"></i>
+                      7.3k
+                           </div>
+                      </div>
+                      </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                  <div class="item">
+                      <div class="card">
+                       <img src="/assest/66.webp" class="card-img">
+                       <div class="card-img-overlay">
+                           <div class="card-text d-flex justify-content-between align-items-baseline">
+                              <p style="font-size: 20px;"><b>Automation Dubai..</b></p>
+                              <i class="fas fa-heart ms-1"></i>
+                          <i class="bi bi-cloud-plus-fill"></i>
+                          </div>
+                       </div>
+                      </div>
+                      <div class="short-details d-flex justify-content-between">
+                          <a class="one d-flex align-items-center text-decoration-none">
+                               <img class="mt-1 me-1"  src="/assest/28.png" width="20px" height="20px">
+                               <span class="text-muted text-with-logo"><b>NavBar</b></span>
+                              <button class="btn btn-secondary mt-1 ms-1 smallButton" type="button">PRO</button>
+                          </a>
+                           <div class="two d-flex align-items-baseline justify-content-around">
+                              <i class="fas fa-heart ms-1"></i>
+                              93
+                              <i class="fas fa-eye ms-1"></i>
+                              23.1k
+                           </div>
+                      </div>
+                      </div>
+              </div>
+          </div>
+    <div class="row g-4 mb-4">
+      <div class="col-lg-3 col-sm-6">
+          <div class="item">
+              <div class="card">
+               <img src="/assest/67.webp" class="card-img">
+               <div class="card-img-overlay">
+                   <div class="card-text d-flex justify-content-between align-items-baseline">
+                      <p style="font-size: 20px;"><b>Logo Collection.</b></p>
+                      <i class="fas fa-heart ms-1"></i>
+                          <i class="bi bi-cloud-plus-fill"></i>
+                  </div>
+               </div>
+              </div>
+              <div class="short-details d-flex justify-content-between">
+                  <a class="one d-flex text-decoration-none align-items-center">
+                      <img class="mt-1 me-1"  src="/assest/29.png" width="20px" height="20px">
+                      <span class="text-muted text-with-logo"><b>ReDesign</b></span>
+                     <button class="btn btn-secondary mt-1 ms-1 smallButton" type="button">Team</button>
+                  </a>
+                   <div class="two d-flex align-items-baseline">
+                      <i class="fas fa-heart ms-1"></i>
+                      20
+                      <i class="fas fa-eye ms-1"></i>
+                      1.2k
+                   </div>
+              </div>
+              </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+          <div class="item">
+              <div class="card">
+               <img src="/assest/68.webp" class="card-img">
+               <div class="card-img-overlay">
+                   <div class="card-text d-flex justify-content-between align-items-baseline">
+                      <p style="font-size: 20px;"><b>Furniture Store</b></p>
+                      <i class="fas fa-heart ms-1"></i>
+                          <i class="bi bi-cloud-plus-fill"></i>
+                  </div>
+               </div>
+              </div>
+              <div class="short-details d-flex justify-content-between">
+                  <a class="one d-flex text-decoration-none align-items-center">
+                      <img class="mt-1 me-1"  src="/assest/30.png" width="20px" height="20px">
+                      <span class="text-muted text-with-logo"><b>Sunder Pichai</b></span>
+                     <button class="btn btn-secondary mt-1 ms-1 smallButton" type="button">PRO</button>
+                  </a>
+                   <div class="two d-flex align-items-baseline">
+                      <i class="fas fa-heart ms-1"></i>
+                      65
+                      <i class="fas fa-eye ms-1"></i>
+                      4.5k
+                   </div>
+              </div>
+              </div>
+      </div>
+<br>
+
+<br>
+<br>
+<div class="container d-flex justify-content-evenly align-items-baseline">
+  <button class="btn btn-danger btn-sm">
+      Sign up to continue
+  </button>
+  <a href="#" class="text-danger text-decoration-none">or sign in</a>
+</div>
+
+
+<div class="top" style="    position: sticky;">
+  <div class="d-flex justify-content-end">
+      <a href="#">
+          <img width="50" height="50" class="lazyloading-hidden ls-is-cached lazyloaded" src="/assest/backToTop.png">
+      </a>
+  </div>
+  
+</div>
+<div class="last bg-light">
+  <div class="container bg-light mt-4 pt-5">
+       <div class="row">
+          <div class="col">
+              <a class="link-dark" href="#">
+                      <img src="/assest/download.png" alt="" style="height:auto; width: 120px ;">
+
+                      
+              </a>
+              <p class="text-start fw-normal">
+                  Dribbble is the world's leading community for creatives to share, grow, and get hired.
+              </p>
+              <div class="linksSocialMedia d-flex justify-content-center mt-2">
+                  <img src="/assest/dribbleIcon.png" alt="" height="26px">            
+
+                  <span class="accessibility-text"></span>
+               
+              
+                  <img src="/assest/twitter.svg" alt="" height="26px">            
+                        <span class="accessibility-text"></span>
+                                 
+                                  <img src="/assest/fb.svg" alt="" height="26px">            
+                  
+                                  <span class="accessibility-text"></span>
+                                  <img src="/assest/instagram.svg" alt="" height="26px">            
+                  
+                                  <span class="accessibility-text"></span>
+                                  <img src="/assest/pinterest.svg" alt="" height="26px">            
+                  
+                                  <span class="accessibility-text"></span>
+                                  </a>
+                     </div>
+          </div>
+          <div class="col d-flex flex-column align-items-start" style="display:flex; space-between;">
+              <span><b>For Designers</b></span>
+              <a class="link-secondary text-decoration-none" href="#" style="padding: 5px 0;">Go Pro!</a>
+              <a class="link-secondary text-decoration-none" href="#" style="padding: 5px 0;">Explore Design Work</a>
+              <a class="link-secondary text-decoration-none" href="#" style="padding: 5px 0;">Design Blog</a>
+              <a class="link-secondary text-decoration-none" href="#" style="padding: 5px 0;">Overtime Podcast</a>
+              <a class="link-secondary text-decoration-none" href="#" style="padding: 5px 0;">Play Offs</a>
+              <a class="link-secondary text-decoration-none" href="#" style="padding: 5px 0;">Weekly Warm up</a>
+              <a class="link-secondary text-decoration-none" href="#" style="padding: 5px 0;">Refer a friend</a>
+              <a class="link-secondary text-decoration-none" href="#" style="padding: 5px 0;">Code of Conduct</a>
+          </div>
+          <div class="col d-flex flex-column align-items-start">
+              <span class="font-weight-bold"><b>Hire Designers</b></span>
+              <a class="link-secondary text-decoration-none" href="#" style="padding: 5px 0;">Post a job opening</a>
+              <a class="link-secondary text-decoration-none" href="#" style="padding: 5px 0;">Post a freelance project</a>
+              <a class="link-secondary text-decoration-none" href="#" style="padding: 5px 0;">Search for Designers</a>
+              <span class="font-weight-bold" style="padding: 5px 0;"><b>Brands</b></span>
+              <a class="link-secondary text-decoration-none" href="#" style="padding: 5px 0;">Advertise with us</a>
+          </div>
+          <div class="col d-flex flex-column align-items-start">
+              <span class="font-weight-bold"><b>Company</b></span>
+              <a class="link-secondary text-decoration-none" href="#" style="padding: 5px 0;">About</a>
+              <a class="link-secondary text-decoration-none" href="#" style="padding: 5px 0;">Career</a>
+              <a class="link-secondary text-decoration-none" href="#" style="padding: 5px 0;">Support</a>
+              <a class="link-secondary text-decoration-none" href="#" style="padding: 5px 0;">Media Kit</a>
+              <a class="link-secondary text-decoration-none" href="#" style="padding: 5px 0;">Testimonials</a>
+              <a class="link-secondary text-decoration-none" href="#" style="padding: 5px 0;">API</a>
+              <a class="link-secondary text-decoration-none" href="#" style="padding: 5px 0;">Terms of Service</a>
+              <a class="link-secondary text-decoration-none" href="#" style="padding: 5px 0;">Privacy Policy</a>
+              <a class="link-secondary text-decoration-none" href="#" style="padding: 5px 0;">Cookie Policy</a>
+          </div>
+          <div class="col d-flex flex-column align-items-start">
+              <span class="text-dark"><b>Directories</b></span>
+              <a class="link-secondary text-decoration-none" href="#" style="padding: 5px 0;">Design Jobs</a>
+              <a class="link-secondary text-decoration-none" href="#" style="padding: 5px 0;">Designers for hires</a>
+              <a class="link-secondary text-decoration-none" href="#" style="padding: 5px 0;">Freelance designers for hire</a>
+              <a class="link-secondary text-decoration-none" href="#" style="padding: 5px 0;">Tags</a>
+              <a class="link-secondary text-decoration-none" href="#" style="padding: 5px 0;">Places</a>
+              <span style="padding: 5px 0;"><b>Design assets</b></span>
+              <a class="link-secondary text-decoration-none" href="#" style="padding: 5px 0;">Dribble Marketplace</a>
+              <a class="link-secondary text-decoration-none" href="#" style="padding: 5px 0;">Creative Market</a>
+              <a class="link-secondary text-decoration-none" href="#" style="padding: 5px 0;">Fontspring</a>
+              <a class="link-secondary text-decoration-none" href="#" style="padding: 5px 0;">Font Squirrel</a>
+          </div>
+          <div class="col d-flex flex-column align-items-start">
+              <span class="font-weight-bold"><b>Design Resources</b></span>
+              <a class="link-secondary text-decoration-none" href="#" style="padding: 5px 0;">Freelancing</a>
+              <a class="link-secondary text-decoration-none" href="#" style="padding: 5px 0;">Design Hiring</a>
+              <a class="link-secondary text-decoration-none" href="#" style="padding: 5px 0;">Design Portfolio</a>
+              <a class="link-secondary text-decoration-none" href="#" style="padding: 5px 0;">Design Education</a>
+              <a class="link-secondary text-decoration-none" href="#" style="padding: 5px 0;">Creative Process</a>
+              <a class="link-secondary text-decoration-none" href="#" style="padding: 5px 0;">Design Industry Trends</a>
+          </div>
+       </div>
+       <br>
+       <br>
+       <br>
+       
+       <hr style="margin: 10px; opacity: 0.1;">
+
+       <div class="footer-lower-content" style="display: flex;
+       justify-content: space-between;">
+        <div>© 2023 Dribbble. All rights reserved.</div>
+        <div class="total-shots-container">
+          <div>
+            <span class="shots-count">20,844,068</span>
+            shots dribbbled
+          
+          <img src="assest\dribblePinkIcon.png" alt=" style="width=24px; height=24px" > </div>
+
+        </div>
+      </div>
+
+
+
+   </div>
+   </div>  
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
